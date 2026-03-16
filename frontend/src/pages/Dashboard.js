@@ -9,7 +9,7 @@ import PixelPredictor from "../components/PixelPredictor";
 import "./Dashboard.css";
 
 // Direct API URL — bypasses proxy issues
-const API = "http://localhost:5000";
+const API = "https://suryadrishti-api.onrender.com";
 
 export default function Dashboard({ apiStatus }) {
   const [summary, setSummary]   = useState(null);
