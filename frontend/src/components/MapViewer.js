@@ -37,7 +37,7 @@ const LAYER_INFO = {
   },
 };
 
-export default function MapViewer({ layer, apiBase = "http://localhost:5000" }) {
+export default function MapViewer({ layer, apiBase = "https://suryadrishti-api.onrender.com" }) {
   const [imgError, setImgError] = useState(false);
   const info = LAYER_INFO[layer] || LAYER_INFO.uhi;
   const imgSrc = `${apiBase}/api/map/${layer}`;
