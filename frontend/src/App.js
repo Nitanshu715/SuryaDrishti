@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Dashboard from "./pages/Dashboard";
 import "./App.css";
 
-const API = "http://localhost:5000";
+const API = "https://suryadrishti-api.onrender.com";
 
 function App() {
   const [apiStatus, setApiStatus] = useState(null);
