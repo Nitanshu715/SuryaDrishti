@@ -1,0 +1,140 @@
+{
+  "correlation": {
+    "pearson_r": -0.11,
+    "p_value": 0.0,
+    "significant": true,
+    "interpretation": "Moderate negative correlation: vegetation partially reduces heat",
+    "ndvi_bins": [
+      0.019656863063573837,
+      0.05897058919072151,
+      0.09828431904315948,
+      0.13759803771972656,
+      0.17691177129745483,
+      0.2162255048751831,
+      0.255539208650589,
+      0.29485294222831726,
+      0.33416667580604553,
+      0.3734804093837738
+    ],
+    "avg_temp_per_bin": [
+      41.46783447265625,
+      41.74763870239258,
+      41.35007858276367,
+      40.979557037353516,
+      41.04048538208008,
+      40.941078186035156,
+      40.85483932495117,
+      40.782135009765625,
+      40.685054779052734,
+      40.613155364990234
+    ],
+    "sample_pixels": 1458068
+  },
+  "lulc_heat": [
+    {
+      "class_id": 7,
+      "class_name": "Bare Ground",
+      "pixel_count": 118903,
+      "avg_temp": 44.62,
+      "max_temp": 50.68,
+      "min_temp": 42.0
+    },
+    {
+      "class_id": 5,
+      "class_name": "Shrub",
+      "pixel_count": 244076,
+      "avg_temp": 41.96,
+      "max_temp": 50.83,
+      "min_temp": 38.0
+    },
+    {
+      "class_id": 4,
+      "class_name": "Cropland",
+      "pixel_count": 426761,
+      "avg_temp": 41.11,
+      "max_temp": 50.57,
+      "min_temp": 30.65
+    },
+    {
+      "class_id": 3,
+      "class_name": "Grassland",
+      "pixel_count": 278776,
+      "avg_temp": 40.93,
+      "max_temp": 50.55,
+      "min_temp": 30.94
+    },
+    {
+      "class_id": 6,
+      "class_name": "Buildup Area",
+      "pixel_count": 897771,
+      "avg_temp": 40.93,
+      "max_temp": 50.5,
+      "min_temp": 30.33
+    },
+    {
+      "class_id": 2,
+      "class_name": "Trees",
+      "pixel_count": 59677,
+      "avg_temp": 40.66,
+      "max_temp": 51.36,
+      "min_temp": 30.9
+    },
+    {
+      "class_id": 1,
+      "class_name": "Water Bodies",
+      "pixel_count": 12702,
+      "avg_temp": 33.77,
+      "max_temp": 35.0,
+      "min_temp": 30.84
+    }
+  ],
+  "green_deficit": {
+    "low_ndvi_threshold": 0.0147,
+    "high_temp_threshold": 42.08,
+    "deficit_pixel_count": 88030,
+    "deficit_percentage": 6.04,
+    "description": "Green deficit zones are areas with NDVI below 0.015 (25th percentile) AND temperature above 42.1\u00b0C (75th percentile). These are the priority zones for urban greening interventions."
+  },
+  "recommendations": [
+    {
+      "id": 1,
+      "zone": "West Delhi \u2014 Dwarka/Najafgarh Area",
+      "heat_class": "Very High (>45\u00b0C)",
+      "recommendation": "Urban forest belt along Najafgarh Road",
+      "estimated_cooling": "3\u20135\u00b0C surface temperature reduction",
+      "priority": "Critical"
+    },
+    {
+      "id": 2,
+      "zone": "South West \u2014 Industrial Corridors",
+      "heat_class": "High (42\u201345\u00b0C)",
+      "recommendation": "Tree corridors along NH-48 and Ring Road",
+      "estimated_cooling": "2\u20134\u00b0C",
+      "priority": "High"
+    },
+    {
+      "id": 3,
+      "zone": "Central Delhi \u2014 Dense Urban Core",
+      "heat_class": "Moderate\u2013High",
+      "recommendation": "Rooftop gardens + pocket parks in wards",
+      "estimated_cooling": "1\u20132\u00b0C",
+      "priority": "High"
+    },
+    {
+      "id": 4,
+      "zone": "North Delhi \u2014 Industrial Zones",
+      "heat_class": "High (42\u201345\u00b0C)",
+      "recommendation": "Green buffer zones around industrial clusters",
+      "estimated_cooling": "2\u20133\u00b0C",
+      "priority": "Medium"
+    },
+    {
+      "id": 5,
+      "zone": "Yamuna Floodplain",
+      "heat_class": "Low",
+      "recommendation": "Preserve and expand riparian vegetation",
+      "estimated_cooling": "Maintains current cooling effect",
+      "priority": "Preserve"
+    }
+  ]
+}
