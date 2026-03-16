@@ -61,9 +61,9 @@ export default function Dashboard({ apiStatus }) {
           <div className="logo-mark">
             <span className="logo-icon">🌍</span>
             <div>
-              <h1 className="project-title">Delhi UHI Intelligence Platform</h1>
+              <h1 className="project-title">SuryaDrishti</h1>
               <p className="project-sub mono">
-                AI-Powered Urban Heat Island Mapping · Landsat 9 · April 2025
+                Delhi Urban Heat Island Intelligence · Landsat 9
               </p>
             </div>
           </div>
