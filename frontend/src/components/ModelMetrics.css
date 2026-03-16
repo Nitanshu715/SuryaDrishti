@@ -1,0 +1,58 @@
+.model-metrics { display: flex; flex-direction: column; gap: 12px; }
+
+.model-badge {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+.model-name { font-size: 11px; color: var(--accent); }
+.model-tag {
+  font-size: 10px; color: var(--muted);
+  background: var(--panel);
+  padding: 2px 8px; border-radius: 10px;
+}
+
+.metric-row { display: flex; flex-direction: column; gap: 5px; }
+.metric-label { font-size: 11px; color: var(--muted); }
+.metric-bar-wrap { display: flex; align-items: center; gap: 10px; }
+.metric-bar-track {
+  flex: 1; height: 6px;
+  background: var(--bg);
+  border-radius: 3px; overflow: hidden;
+}
+.metric-bar-fill {
+  height: 100%; border-radius: 3px;
+  transition: width 0.8s ease;
+}
+.metric-val { font-size: 12px; font-weight: 600; min-width: 40px; text-align: right; }
+
+.metric-divider {
+  height: 1px; background: var(--border); margin: 2px 0;
+}
+
+.features-list { display: flex; flex-direction: column; gap: 5px; }
+.features-title { font-size: 10px; margin-bottom: 2px; }
+.feature-tag {
+  font-size: 11px; color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+.target-note { font-size: 11px; }
+
+.metrics-empty {
+  display: flex; flex-direction: column; gap: 10px; padding: 4px 0;
+}
+.cmd-hint {
+  font-size: 11px; color: var(--accent);
+  font-family: var(--mono);
+  background: var(--bg);
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  width: fit-content;
+}

@@ -1,0 +1,92 @@
+.pixel-predictor { display: flex; flex-direction: column; gap: 14px; }
+
+.input-group { display: flex; flex-direction: column; gap: 5px; }
+.input-label {
+  font-size: 11px; font-weight: 600; color: var(--muted);
+  display: flex; justify-content: space-between;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.input-range { font-size: 10px; }
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%; height: 4px;
+  background: var(--border);
+  border-radius: 2px; outline: none;
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,212,170,0.5);
+}
+.slider-val {
+  font-size: 13px; color: var(--accent); font-weight: 700;
+  align-self: flex-end;
+}
+
+.select {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: var(--sans);
+  cursor: pointer;
+  outline: none;
+}
+.select:focus { border-color: var(--accent); }
+
+.predict-btn {
+  padding: 10px;
+  background: rgba(0,212,170,0.12);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.3px;
+}
+.predict-btn:hover:not(:disabled) {
+  background: rgba(0,212,170,0.22);
+}
+.predict-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.pred-error {
+  font-size: 11px; color: var(--warning);
+  background: rgba(255,171,0,0.08);
+  border: 1px solid rgba(255,171,0,0.2);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.pred-result {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  display: flex; flex-direction: column; gap: 12px;
+  border-left-width: 3px;
+}
+.result-top { display: flex; align-items: center; gap: 12px; }
+.result-emoji { font-size: 28px; }
+.result-label { font-size: 16px; font-weight: 700; }
+.result-zone  { font-size: 11px; margin-top: 2px; }
+
+.prob-bars { display: flex; flex-direction: column; gap: 5px; }
+.prob-row  { display: flex; align-items: center; gap: 8px; }
+.prob-cls  { font-size: 11px; width: 12px; text-align: right; }
+.prob-track {
+  flex: 1; height: 5px;
+  background: var(--border);
+  border-radius: 3px; overflow: hidden;
+}
+.prob-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; opacity: 0.8; }
+.prob-val  { font-size: 10px; width: 28px; color: var(--muted); }
