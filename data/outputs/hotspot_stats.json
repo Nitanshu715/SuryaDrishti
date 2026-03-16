@@ -1,0 +1,37 @@
+{
+  "total_valid_pixels": 1458068,
+  "zones": [
+    {
+      "class": 1,
+      "label": "Very Low (<36\u00b0C)",
+      "pixel_count": 39605,
+      "percentage": 2.72
+    },
+    {
+      "class": 2,
+      "label": "Low (36-39\u00b0C)",
+      "pixel_count": 0,
+      "percentage": 0.0
+    },
+    {
+      "class": 3,
+      "label": "Moderate (39-42\u00b0C)",
+      "pixel_count": 1041364,
+      "percentage": 71.42
+    },
+    {
+      "class": 4,
+      "label": "High (42-45\u00b0C)",
+      "pixel_count": 268072,
+      "percentage": 18.39
+    },
+    {
+      "class": 5,
+      "label": "Very High (>45\u00b0C)",
+      "pixel_count": 109027,
+      "percentage": 7.48
+    }
+  ],
+  "highest_risk_zone": "Very High (>45\u00b0C)",
+  "critical_coverage_pct": 7.48
+}
