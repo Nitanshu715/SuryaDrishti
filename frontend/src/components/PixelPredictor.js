@@ -19,7 +19,7 @@ const RISK_META = {
   5: { label: "Very High", color: "#DC143C", emoji: "🔴" },
 };
 
-export default function PixelPredictor({ apiBase = "http://localhost:5000" }) {
+export default function PixelPredictor({ apiBase = "https://suryadrishti-api.onrender.com" }) {
   const [ndvi, setNdvi]     = useState(0.15);
   const [temp, setTemp]     = useState(43.0);
   const [lulc, setLulc]     = useState(6);
